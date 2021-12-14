@@ -1,10 +1,22 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {
+  Breath,
+  Home,
+  Menu,
+  Results,
+} from 'components';
 
 function App() {
   return (
-    <button className="bg-indigo-200 text-4xl font-bold pl-4 pr-10 pt-5 pb-10 border-2 border-blue-900">
-      Hello world!
-    </button>
+    <BrowserRouter>
+      <Menu />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="breath" element={<Breath />} />
+        <Route path="results" element={<Results />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
