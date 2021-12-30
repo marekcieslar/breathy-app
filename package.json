@@ -45,9 +45,12 @@
     ]
   },
   "devDependencies": {
+    "@cypress/react": "^5.12.0",
+    "@cypress/webpack-dev-server": "^1.8.0",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "autoprefixer": "^10.4.0",
+    "cypress": "^9.2.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.2",
     "eslint-config-prettier": "^8.3.0",
